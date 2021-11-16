@@ -1,0 +1,80 @@
+/*PC*/
+@media (min-width: 1024px)
+{
+    #header .menu-icon
+    {
+        display: none;
+    }
+}
+
+/*TABLET*/
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    #header .menu-icon
+    {
+        display: none;
+    }
+}
+
+/*MOBILE*/
+@media (max-width: 736px)
+{
+    #header {
+        overflow:hidden;
+      }
+
+      
+    #header .search-btn
+    {
+        display: none;
+    }
+   
+    #nav
+    {
+        display: block;
+    }
+    
+    #nav > li
+    {
+        display: block;
+    }
+
+    #nav > li:first-child
+    {
+        display: inline-block;
+    }
+
+    #content .member-new-mobile
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+    #content .member-ava
+    {
+        width: 60%;
+    }
+    .places-item {
+        width: 100%;
+        padding-bottom: 16px;
+    }
+    .places-heading {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .col-half {
+        width: 100%;
+    }
+    .contact-inf
+    {
+        margin-bottom: 12px;
+    }
+
+    .map-section img
+    {
+        margin-top: 80px;
+    }
+    .sub-btn-form
+    {
+        width: 100%;
+    }
+}

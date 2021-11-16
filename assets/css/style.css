@@ -1,0 +1,611 @@
+/*Reset CSS*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  
+  font-family: Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+*/
+
+
+/*Common*/
+
+.clear
+{
+  clear: both;
+}
+
+.text-white
+{
+  color: #fff !important;
+}
+
+.row
+{
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col
+{
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-half
+{
+  width: 50%;
+}
+
+.col-full
+{
+  width: 100%;
+}
+
+.mt-8px
+{
+  margin-top: 8px !important;
+}
+.mt-16px
+{
+  margin-top: 16px !important;
+}
+
+
+/*Main*/
+
+#main {
+  overflow: hidden
+}
+
+#header {
+  height: 46.8px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  overflow:visible;
+}
+
+#nav
+{
+    display: inline-block;
+}
+
+#nav,
+.subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#nav li a {
+  text-decoration: none;
+  line-height: 46.8px;
+  padding: 0 24px;
+  display: block;
+}
+
+#nav > li:hover .subnav
+{
+    display: block;
+}
+
+#nav > li:hover > a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  min-width: 160px;
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#nav .subnav li:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .nav-arrow-down
+{
+    font-size: 12px;
+}
+
+
+#header .moblie-menu-btn
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#header .moblie-menu-btn,
+#header .search-btn
+{
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+#header .search-btn:hover
+{
+    background-color: #f44336;
+}
+
+#header .moblie-menu-btn:hover
+{
+  background-color: #ccc;
+}
+
+#header .moblie-menu-btn:hover .menu-icon
+{
+  color: #000;
+
+}
+
+#header .menu-icon,
+#header .search-icon
+{
+    color: #fff; 
+    font-size: 20px;
+    line-height: 46.6px;
+}
+
+#slider {
+  position: relative;
+  margin-top: 46.6px;
+  padding-top: 50%; /*50% chiều ngang của chính nó*/
+  background-image: url('/assets/img/slider/slider1.jpg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  
+  
+}
+
+#slider .text-content
+{
+    width: 100%;
+    position: absolute;
+    bottom: 16px;
+    color: #fff;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+    
+
+}
+
+#slider .text-heading
+{
+      font-weight: 450;
+      font-size: 28px;
+      
+}
+
+#slider .text-description
+{
+      margin-top: 8px;
+      font-size: 16px;
+}
+
+#content {
+  
+}
+
+#content .content-section {
+  width: 800px;
+  padding: 64px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#content .section-heading
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+
+}
+#content .section-sub-heading
+{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 24px;
+  font-style: italic;
+  opacity: 0.75;
+
+}
+#content .about-text
+{
+  font-size: 15px;
+  margin-top: 24px;
+  text-align: justify;
+  line-height: 1.4;
+}
+
+#content .member-item
+{
+  float:left;
+  padding-top: 72px;
+  width: 33.3333%;  
+  text-align: center;
+}
+
+#content .member-name
+{
+  font-size: 15px;
+}
+
+#content .member-ava
+{
+  margin-top: 20px;
+  width: 154px;
+  border-radius: 4px;
+}
+
+
+.tour-section
+{
+  background-color: #000;
+}
+
+.ticket-list
+{
+  list-style-type: none;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+
+
+.ticket-list li
+{
+  color: #757575;
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.ticket-list .sold-out
+{
+ background-color: #f44336;
+ color: #fff;
+ padding: 3px 4px;
+ margin-left: 16px;
+}
+
+.ticket-list .amount
+{
+  float: right;
+  width: 24px;
+  height: 24px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+
+/* Places */
+.places-list {
+  margin-top: 32px;
+  padding-bottom: 48px;
+}
+
+.places-item {
+  width: 33.3333%;
+}
+
+.places-img {
+    width: 100%;
+    display: block;
+}
+.places-img:hover
+{
+  opacity: 0.6;
+}
+
+.places-body {
+  background-color: #fff;
+  font-size: 15px;
+  padding: 16px;
+}
+
+.places-heading {
+  font-size: 18px;
+  font-weight: 550;
+}
+
+.places-time {
+  margin-top: 15px;
+  color: #757575;
+}
+
+.places-description {
+  margin-top: 15px;
+  margin-bottom: 24px;
+  line-height: 1.4;
+
+}
+
+.places-buy-btn {
+  border: none;
+  text-decoration: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 19px;
+  display: inline-block;
+}
+.places-buy-btn:hover
+{
+  color:#000;
+  background-color: #ccc;
+}
+
+
+.contact-content
+{
+  margin-top: 48px;
+}
+
+.contact-inf
+{
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight:bold;
+  
+}
+
+.contact-inf i[class*="ti-"]
+{
+  width: 32px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+.contact-form
+{
+  font-size: 15px;
+}
+
+.contact-form .form-control
+{
+  padding: 10px;
+  border: 1.5px solid #ccc;
+  width: 100%;
+}
+
+.sub-btn-form
+{
+  float: right;
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 8px 16px;
+}
+
+.sub-btn-form:hover
+{
+  opacity: 0.8;
+}
+
+.map-section
+{
+
+}
+
+.map-section img
+{
+  margin-top: 120px;
+  width: 100%;
+}
+
+
+
+
+
+
+#footer {
+  padding: 64px 16px;
+
+}
+
+#footer .socials-list
+{
+    text-align: center;
+    font-size: 24px;
+    line-height: 46.6px;
+    color:black;
+} 
+#footer .socials-list a
+{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+#footer .socials-list a:hover
+{
+    color: rgba(0, 0, 0, 0.3);
+    
+} 
+#footer .copyright
+{
+  margin-top: 15px;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  opacity: 0.7;
+}
+#footer .copyright a
+{
+  color: rgba(0, 0, 0, 0.6);
+ 
+}
+
+#footer .copyright a:hover
+{
+  color: #000;
+}
+
+.modal
+{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.modal.open
+{
+  display: flex;
+}
+
+.modal-container
+{
+  animation: modalFadeIn ease 0.3s;
+  max-width: calc(100% - 32px);
+  position: relative;
+  background: #fff;
+  width: 900px;
+  min-height: 200px;
+  
+}
+
+
+.modal-header {
+  background: #10ac9d;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.modal-heading-icon
+{
+  margin-right: 16px;
+}
+
+.modal-close:hover
+{
+  background-color: #ccc;
+}
+
+.modal-close
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  display: block;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 24px;
+}
+
+#buy-tickets:hover
+{
+  opacity: 0.7;
+}
+
+#buy-tickets {
+  background: #10ac9d;
+  border: none;
+  color: #fff;
+  width: 100%;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.modal-footer
+{
+  
+}
+
+
+.modal-help {
+  text-align: right;
+  padding-right: 16px;
+  padding-bottom: 20px;
+}
+.modal-footer a {
+  color: #2196F3;
+}
+
+@keyframes modalFadeIn
+{
+  from
+  {
+    transform: translateY(-100px);
+  }
+  to
+  {
+    transform: translateY(0);
+  }
+}
